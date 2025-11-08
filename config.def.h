@@ -68,8 +68,6 @@ static const Layout layouts[] = {
 /* helper for spawning shell commands in the pre dwm-5.0 fashion */
 #define SHCMD(cmd) { .v = (const char*[]){ "/bin/sh", "-c", cmd, NULL } }
 
-static const int dmenudesktop = 1;
-
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenu{dark,light}, manipulated in spawndmenu() */
 static const char *dmenudark[] =  { "dmenu_run", "-m", dmenumon, "-i", "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
