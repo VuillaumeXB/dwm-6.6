@@ -1773,6 +1773,8 @@ spawn(const Arg *arg)
 void
 spawndmenu(const Arg *arg)
 {
+	if (dmenudesktop)
+    	dmenucmd[0] = "dmenu_run_desktop";
 	dmenumon[0] = '0' + selmon->num;
 	spawn(&(const Arg){.v = dmenucmd});
 }
